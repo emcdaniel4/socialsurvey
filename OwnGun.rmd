@@ -16,13 +16,11 @@ source('D:/Project_folders/SocSurvey/makeTables.R')
 
 # Introduction
 
-<<<<<<< HEAD
 The General Social Survey (GSS) is a survey that has been directed every two years since 1972. The GSS monitors social change in American society and is one of the greatest important studies in the social sciences. The statistics collected in this specific study is based on the thoughts of the respondents questioned in 2010 and were also later interrogated in 2012 and 2014. But, for the perseverance of this report, we will be using only the data from 2014.
 
 Our research question is: Was there a relationship between gun ownership and race, sex, political views, opinions on capital punishment, or belief in God in 2014?
 
-=======
->>>>>>> Inferential
+
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->   
 
 ####This study deals with questions about possible relationships between gun ownership and race, sex, political views, opinions on capitol punishment and belief in god. The data is from the 2014 general social survey.
@@ -33,7 +31,6 @@ Our research question is: Was there a relationship between gun ownership and rac
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
-<<<<<<< HEAD
   The data for the General Social Survey is large, having 2044 observations, 3542 variables, and contains not only the 2010 data, but data from 2012 and 2014. To mark the data easier to use, we must trim it down. We will be using r code stored in a separate. r file to help do this. We start with GSS data from the three years and then use the select function from the dplyr package to extract 12 variables that we think are important, but for this research paper, we will only be using the following variables; belief in the gun ownership, race, sex, political beliefs,opinions on capitol punishment and belief in God. But, we still need to clean the data up a bit more. This was done in the following ways: 
   
 • 	Gun ownership was originally recorded as YES, NO, IAP, REFUSED, and DK. Using the revalue function, we changed the IAP, REFUSED and DK value to NA.  
@@ -49,8 +46,7 @@ Our research question is: Was there a relationship between gun ownership and rac
 To help answer our research question, we will be omitting all NA responses, and then view the results of the data both graphically and numerically. Since we will be comparing factor variables, we will use bar charts and two-way tables. Then, finally, we will do an inferential test using the chi-square test.  
 
 
-=======
->>>>>>> Inferential
+
 #Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
@@ -60,7 +56,7 @@ To help answer our research question, we will be omitting all NA responses, and 
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
-<<<<<<< HEAD
+
 ```{r}
 barchartGC(race_table,type="percent" , main= "Race vs. Gun Ownership")
 ```
@@ -202,4 +198,4 @@ Our P-Value is 0.9739. This means the probability of getting a sample like this 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
->>>>>>> Inferential
+
