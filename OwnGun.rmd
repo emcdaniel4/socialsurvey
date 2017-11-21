@@ -10,10 +10,15 @@ output:
 require(tigerstats)
 require(tidyverse)
 source("Import_GSS_2014_haven.R")
+source('D:/Project_folders/SocSurvey/makeTables.R')
 ```
 <!-- We recommend you use git branches -- create a separate branch for each major section i.e. Introduction, Methods, Results, Inferential Results, and Discussion and Conclusions - leave the YAML block untouched until the final merge where you put in your own name !-->
 
 # Introduction
+The General Social Survey (GSS) is a survey that has been directed every two years since 1972. The GSS monitors social change in American society and is one of the greatest important studies in the social sciences. The statistics collected in this specific study is based on the thoughts of the respondents questioned in 2010 and were also later interrogated in 2012 and 2014. But, for the perseverance of this report, we will be using only the data from 2014.
+
+Our research question is: Was there a relationship between gun ownership and race, sex, political views, opinions on capital punishment, or belief in God in 2014?
+
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->   
 
