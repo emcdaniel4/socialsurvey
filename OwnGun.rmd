@@ -10,24 +10,16 @@ output:
 require(tigerstats)
 require(tidyverse)
 source("Import_GSS_2014_haven.R")
-<<<<<<< HEAD
 source('D:/Project_folders/SocSurvey/makeTables.R')
-=======
->>>>>>> Methods
 ```
 <!-- We recommend you use git branches -- create a separate branch for each major section i.e. Introduction, Methods, Results, Inferential Results, and Discussion and Conclusions - leave the YAML block untouched until the final merge where you put in your own name !-->
 
 # Introduction
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 The General Social Survey (GSS) is a survey that has been directed every two years since 1972. The GSS monitors social change in American society and is one of the greatest important studies in the social sciences. The statistics collected in this specific study is based on the thoughts of the respondents questioned in 2010 and were also later interrogated in 2012 and 2014. But, for the perseverance of this report, we will be using only the data from 2014.
 
 Our research question is: Was there a relationship between gun ownership and race, sex, political views, opinions on capital punishment, or belief in God in 2014?
 
->>>>>>> Introduction
-=======
->>>>>>> Methods
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->   
 
@@ -38,8 +30,7 @@ Our research question is: Was there a relationship between gun ownership and rac
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
-<<<<<<< HEAD
-=======
+
   The data for the General Social Survey is large, having 2044 observations, 3542 variables, and contains not only the 2010 data, but data from 2012 and 2014. To mark the data easier to use, we must trim it down. We will be using r code stored in a separate. r file to help do this. We start with GSS data from the three years and then use the select function from the dplyr package to extract 12 variables that we think are important, but for this research paper, we will only be using the following variables; belief in the gun ownership, race, sex, political beliefs,opinions on capitol punishment and belief in God. But, we still need to clean the data up a bit more. This was done in the following ways: 
   
 • 	Gun ownership was originally recorded as YES, NO, IAP, REFUSED, and DK. Using the revalue function, we changed the IAP, REFUSED and DK value to NA.  
@@ -54,7 +45,6 @@ Our research question is: Was there a relationship between gun ownership and rac
 • 	One’s belief in God was originally recorded as having 8 different levels. Again, using the revalue function, we condensed the number of levels down to four. For the responses DONT BELIEVE and NO WAY TO FIND OUT, we changed the value to no. For the responses SOME HIGHER POWER, BELIEVE SOMETIMES, BELIEVE BUT DOUBTS, and DK (for don’t know), we had them represented by the value maybe. For the response KNOW GOD EXISTS, we used the value yes. For the response IAP, we used the value NA.
 To help answer our research question, we will be omitting all NA responses, and then view the results of the data both graphically and numerically. Since we will be comparing factor variables, we will use bar charts and two-way tables. Then, finally, we will do an inferential test using the chi-square test.  
 
->>>>>>> Methods
 
 #Results
 
@@ -78,8 +68,6 @@ To help answer our research question, we will be omitting all NA responses, and 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 After viewing the results graphically, numerically, and running chi-square tests on the data, we can conclude the following:  
 
@@ -94,7 +82,4 @@ If we were to make a profile of those that voted YES on gun ownership they might
 If we were to make a profile of those that voted NO on gun ownership they might be BLACK or OTHER, FEMALE, LIBERAL or MODERATE, OPPOSE capital punishment, and DO NOT believe in GOD.  
 
 So without taking any other variables into account, there is a relationship between race, sex, political beliefs, beliefs on capital punishment, belief in God and gun ownership. Many participants in these groups voted NO on gun ownership but it seems as though they are influenced by their specific group. It would be interesting to research a generation gap on gun ownership. Would there be a relationship with age and gun ownership? The GSS data has over 3000 different variables which means there are many different factors to compare.  
-=======
->>>>>>> Introduction
-=======
->>>>>>> Methods
+
