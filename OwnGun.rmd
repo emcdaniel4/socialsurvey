@@ -16,11 +16,14 @@ source('D:/Project_folders/SocSurvey/makeTables.R')
 
 # Introduction
 
+<<<<<<< HEAD
 The General Social Survey (GSS) is a survey that has been directed every two years since 1972. The GSS monitors social change in American society and is one of the greatest important studies in the social sciences. The statistics collected in this specific study is based on the thoughts of the respondents questioned in 2010 and were also later interrogated in 2012 and 2014. But, for the perseverance of this report, we will be using only the data from 2014.
 
 Our research question is: Was there a relationship between gun ownership and race, sex, political views, opinions on capital punishment, or belief in God in 2014?
 
 
+=======
+>>>>>>> Results
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?!-->   
 
 ####This study deals with questions about possible relationships between gun ownership and race, sex, political views, opinions on capitol punishment and belief in god. The data is from the 2014 general social survey.
@@ -31,6 +34,7 @@ Our research question is: Was there a relationship between gun ownership and rac
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
 
+<<<<<<< HEAD
   The data for the General Social Survey is large, having 2044 observations, 3542 variables, and contains not only the 2010 data, but data from 2012 and 2014. To mark the data easier to use, we must trim it down. We will be using r code stored in a separate. r file to help do this. We start with GSS data from the three years and then use the select function from the dplyr package to extract 12 variables that we think are important, but for this research paper, we will only be using the following variables; belief in the gun ownership, race, sex, political beliefs,opinions on capitol punishment and belief in God. But, we still need to clean the data up a bit more. This was done in the following ways: 
   
 • 	Gun ownership was originally recorded as YES, NO, IAP, REFUSED, and DK. Using the revalue function, we changed the IAP, REFUSED and DK value to NA.  
@@ -55,10 +59,76 @@ To help answer our research question, we will be omitting all NA responses, and 
 ### Graphical Descriptive Results
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+=======
+#Results
+
+<!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
+
+## Descriptive Results
+
+### Graphical Descriptive Results
+
+<!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+```{r}
+barchartGC(race_table,type="percent" , main= "Race vs. Gun Ownership")
+```
+
+After viewing this data graphically, it appears that WHITE, BLACK, and OTHER all voted “no” on gun ownership. This means that people should not own guns themselves.
+
+```{r}
+barchartGC(sex_table,type="percent" , main= "Sex vs. Gun Ownership")
+```
+In this dataset, the comparison we can determine is that both males and females say “no” to gun ownership.
+
+```{r}
+barchartGC(polviews_table,type="percent" , main= "Political Beliefs vs. Gun Ownership")
+```
+In this dataset we are still seeing a lot of “no” between the groups.
+
+```{r}
+barchartGC(cappun_table,type="percent" , main= "Capital Punishment vs. Gun Ownership")
+```
+ALthough in this dataset, the idea of no ownership of guns stands strong especially with those that believe in capital punishment.
+
+```{r}
+barchartGC(god_table,type="percent", main= "Belief in God vs. Gun Ownership")
+```
+The relationship that we can see here is that it is completely even between all of the groups, saying “yes” or “no”.
+
+Based on our graphical results, the relationship shown between the groups form the survey is that a lot of the participants are saying “no” to gun ownership. There is hardly any chance that one of these groups will change their response to yes. The only relationship is the comparison of belief in God and gun ownership. Each group had over 60% vote “no” and about 35% vote “yes”.
+
+>>>>>>> Results
 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+<<<<<<< HEAD
+=======
+To view the results of our data numerically, we will use a two-way table with row percents using the rowPerc function from the tigerstats package.
+```{r}
+rowPerc(race_table)
+```
+Of those in the WHITE group, 39.01% voted YES on gun ownership, 60.99% voted NO. Of those in the BLACK group, 16.87% voted YES on gun ownership, 83.13% voted NO. Of those in the OTHER group, 13.93% voted YES on gun ownership, 86.07% voted NO. After viewing the data numerically, both BLACK and OTHER strongly voted NO on gun ownership, whereas the group WHITE had more YES on gun ownership compared to the two other groups.
+
+```{r}
+rowPerc(sex_table)
+```
+Of those in the MALE group, 39.76% voted YES, 60.24% voted NO. Of those in the FEMALE group, 27.32% voted YES, 72.68 voted NO. We can see that more FEMALES voted NO on gun ownership than the MALES.
+
+```{r}
+rowPerc(polviews_table)
+```
+Of those in the LIBERAL group, 24.52% voted YES, 75.48% voted NO. Of those in the MODERATE group, 33.20% voted YES, 66.80% voted NO. Of those in the CONSERVATIVE group, 42.17% voted YES, 57.83% voted NO. Regardless of political views, all three groups want nothing to do with gun ownership.
+```{r}
+rowPerc(cappun_table)
+```
+Of those in the FAVOR group 41.44% voted YES, 58.56% voted NO. Of those in the OPPOSE group 20.58% voted YES, 79.42% voted NO. Although both groups have the majority decision of NO, those that oppose capital punishment want nothing to do with gun ownership. This could mean that if someone doesn’t believe in capital punishment, they obviously do not like guns either.
+```{r}
+rowPerc(god_table)
+```
+Comparing the No’s, MAYBE’s, and YES’s we can seee that about 30% voted YES on gun ownership and about 68% voted NO. We can see that there are more people who do not beleive in GOD that want nothing to do with gun ownership.
+
+>>>>>>> Results
 
 # Inferential Results
 
@@ -68,6 +138,7 @@ To help answer our research question, we will be omitting all NA responses, and 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+<<<<<<< HEAD
 
 After viewing the results graphically, numerically, and running chi-square tests on the data, we can conclude the following:  
 
@@ -83,3 +154,5 @@ If we were to make a profile of those that voted NO on gun ownership they might 
 
 So without taking any other variables into account, there is a relationship between race, sex, political beliefs, beliefs on capital punishment, belief in God and gun ownership. Many participants in these groups voted NO on gun ownership but it seems as though they are influenced by their specific group. It would be interesting to research a generation gap on gun ownership. Would there be a relationship with age and gun ownership? The GSS data has over 3000 different variables which means there are many different factors to compare.  
 
+=======
+>>>>>>> Results
